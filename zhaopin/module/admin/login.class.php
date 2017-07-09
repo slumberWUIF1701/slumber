@@ -83,7 +83,8 @@ class login extends main{
             exit;
         }
         $upass=md5($upass);
-        if($db->insert("uname='{$uname}',upass='{$upass}',cpname='{$cpname}',address='{$address}',hrname='{$hrname}',zhiwei='{$zhiwei}',phone='{$phone}',allow={$allow}")>0){
+        $sex="男";
+        if($db->insert("uname='{$uname}',upass='{$upass}',cpname='{$cpname}',sex='{$sex}',address='{$address}',hrname='{$hrname}',zhiwei='{$zhiwei}',phone='{$phone}',allow={$allow}")>0){
             $this->jump("注册成功","index.php?d=admin&f=login");
         }
     }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-07 16:08:17
+/* Smarty version 3.1.30, created on 2017-07-08 18:29:25
   from "D:\wamp\www\zhaopin\template\admin\zhaopinMess.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595f95d1a7c2a4_33778883',
+  'unifunc' => 'content_596108652671d5_06670010',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '284e5d31ecb35277a7244293679dbca79c8c8f71' => 
     array (
       0 => 'D:\\wamp\\www\\zhaopin\\template\\admin\\zhaopinMess.html',
-      1 => 1499436493,
+      1 => 1499530948,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595f95d1a7c2a4_33778883 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596108652671d5_06670010 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +62,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
             <td><?php echo $_smarty_tpl->tpl_vars['v']->value['posid'];?>
 </td>
             <td>
-                <a href="">删除</a>
+                <a href="index.php?d=admin&f=lists&a=del&id=<?php echo $_smarty_tpl->tpl_vars['v']->value['zid'];?>
+">删除</a>
                 <a href="index.php?d=admin&f=lists&a=edit&id=<?php echo $_smarty_tpl->tpl_vars['v']->value['zid'];?>
 ">编辑</a>
             </td>

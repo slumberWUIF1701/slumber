@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-08 16:32:43
+/* Smarty version 3.1.30, created on 2017-07-09 03:58:57
   from "D:\wamp\www\zhaopin\template\admin\main.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5960ed0b360fe5_97151575',
+  'unifunc' => 'content_59618de14938b6_99564679',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ce575f0c5495f243a0272f5c67d43137a32661d6' => 
     array (
       0 => 'D:\\wamp\\www\\zhaopin\\template\\admin\\main.html',
-      1 => 1499524361,
+      1 => 1499565519,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5960ed0b360fe5_97151575 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59618de14938b6_99564679 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -136,43 +136,16 @@ jquery-3.1.1.js"><?php echo '</script'; ?>
                 <a href="javascript:;">信息管理</a>
                 <ul>
                     <li>
-                        <a href="index.php?d=admin&f=editZp&a=chakan" target="iframe">招聘信息管理</a>
+                        <a href="index.php?d=admin&f=editzp&a=chakan" target="iframe">招聘信息管理</a>
                     </li>
 
                 </ul>
             </li>
-            <?php }?>
-            <li>
-                <a href="javascript:;">个人信息</a>
-                <ul>
-                    <li>
-                        <a href="index.php?d=admin&f=user&a=editPass" target="iframe">修改密码</a>
-                    </li>
-                    <li>
-                        <a href="index.php?d=admin&f=user&a=editMess" target="iframe">修改个人信息</a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li>
-                <a href="javascript:;">内容管理</a>
-                <ul>
-                    <li>
-                        <a href="index.php?d=admin&f=category&a=add" target="iframe">添加内容</a>
-                    </li>
-
-                    <li>
-                        <a href="index.php?d=admin&f=lists&a=chakan" target="iframe">查看内容</a>
-                    </li>
-                </ul>
-            </li>
-
             <li>
                 <a href="javascript:;">作品查看</a>
                 <ul>
                     <li>
-                        <a href="index.php?d=admin&f=zuopin&a=add" target="iframe">查看作品</a>
+                        <a href="index.php?d=admin&f=works&a=chakan" target="iframe">查看作品</a>
                     </li>
                 </ul>
             </li>
@@ -188,6 +161,40 @@ jquery-3.1.1.js"><?php echo '</script'; ?>
                     </li>
                 </ul>
             </li>
+            <?php }?>
+            <?php if ($_smarty_tpl->tpl_vars['rid']->value == 0) {?>
+            <li>
+                <a href="javascript:;">个人信息</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=user&a=editPass" target="iframe">修改密码</a>
+                    </li>
+                    <li>
+                        <a href="index.php?d=admin&f=user&a=editMess" target="iframe">修改个人信息</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">内容管理</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=category&a=add" target="iframe">添加内容</a>
+                    </li>
+
+                    <li>
+                        <a href="index.php?d=admin&f=lists&a=chakan" target="iframe">查看内容</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">简历管理</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=jianli&a=chakan" target="iframe">查看简历</a>
+                    </li>
+                </ul>
+            </li>
+            <?php }?>
         </ul>
     </div>
     <div class="right">

@@ -53,6 +53,9 @@ class user extends main{
         $obj->move();
     }
     function editMess(){
+        $uid=$this->session->get('id');
+        $result=$this->db->setWhere("uid={$uid}")->select();
+        $this->smarty->assign("sex",$result[0]);
         $this->smarty->display("admin/editUser.html");
     }
     function editUser(){

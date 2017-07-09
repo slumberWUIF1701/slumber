@@ -51,4 +51,12 @@ class lists extends main{
             $this->jump("编辑成功","index.php?d=admin&f=lists&a=chakan");
         }
     }
+    function del(){
+        $zid=$_REQUEST['zid'];
+        $db=new db('zpmess');
+        $result=$db->del("zid={$zid}");
+        if($result>0){
+            $this->jump("删除成功","index.php?d=admin&f=editzp&a=chakan");
+        }
+    }
 }

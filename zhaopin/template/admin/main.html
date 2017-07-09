@@ -108,43 +108,16 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
                 <a href="javascript:;">信息管理</a>
                 <ul>
                     <li>
-                        <a href="index.php?d=admin&f=editZp&a=chakan" target="iframe">招聘信息管理</a>
+                        <a href="index.php?d=admin&f=editzp&a=chakan" target="iframe">招聘信息管理</a>
                     </li>
 
                 </ul>
             </li>
-            {/if}
-            <li>
-                <a href="javascript:;">个人信息</a>
-                <ul>
-                    <li>
-                        <a href="index.php?d=admin&f=user&a=editPass" target="iframe">修改密码</a>
-                    </li>
-                    <li>
-                        <a href="index.php?d=admin&f=user&a=editMess" target="iframe">修改个人信息</a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li>
-                <a href="javascript:;">内容管理</a>
-                <ul>
-                    <li>
-                        <a href="index.php?d=admin&f=category&a=add" target="iframe">添加内容</a>
-                    </li>
-
-                    <li>
-                        <a href="index.php?d=admin&f=lists&a=chakan" target="iframe">查看内容</a>
-                    </li>
-                </ul>
-            </li>
-
             <li>
                 <a href="javascript:;">作品查看</a>
                 <ul>
                     <li>
-                        <a href="index.php?d=admin&f=zuopin&a=add" target="iframe">查看作品</a>
+                        <a href="index.php?d=admin&f=works&a=chakan" target="iframe">查看作品</a>
                     </li>
                 </ul>
             </li>
@@ -160,6 +133,40 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
                     </li>
                 </ul>
             </li>
+            {/if}
+            {if $rid==0}
+            <li>
+                <a href="javascript:;">个人信息</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=user&a=editPass" target="iframe">修改密码</a>
+                    </li>
+                    <li>
+                        <a href="index.php?d=admin&f=user&a=editMess" target="iframe">修改个人信息</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">内容管理</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=category&a=add" target="iframe">添加内容</a>
+                    </li>
+
+                    <li>
+                        <a href="index.php?d=admin&f=lists&a=chakan" target="iframe">查看内容</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">简历管理</a>
+                <ul>
+                    <li>
+                        <a href="index.php?d=admin&f=jianli&a=chakan" target="iframe">查看简历</a>
+                    </li>
+                </ul>
+            </li>
+            {/if}
         </ul>
     </div>
     <div class="right">
